@@ -1,18 +1,23 @@
-<p style="font-weight: 900; text-align: center;">FRIDGE TO FORK</p>
+**FRIDGE TO FORK**
 
 Fridge to Fork is a single-page web application designed to help users discover healthy and delicious recipes using ingredients they already have at home. By inputting available ingredients, users can find recipes that match their pantry contents.
 
+---------------------------------------------------------------
+
 **Features**
 
-Ingredient-Based Search: Enter ingredients to find matching recipes.
+*Ingredient-Based Search:* Enter ingredients to find matching recipes.
 
-Expandable Recipe Details: View ingredients, instructions, and nutritional information without leaving the search page.
+*Expandable Recipe Details:* View ingredients, instructions, and nutritional information without leaving the search page.
 
-Favorites Section: Save and revisit favorite recipes during the session, with an option to download them.
+*Favorites Section:* Save and revisit favorite recipes during the session, with an option to download them.
 
-Clean and Intuitive UI: User-friendly interface with a header containing a search bar and a link to the favorites section.
+*Clean and Intuitive UI:* User-friendly interface with a header containing a search bar and a link to the favorites section.
+
+---------------------------------------------------------------
 
 **Getting Started**
+
 
 ***Prerequisites:***
 
@@ -39,9 +44,13 @@ npm run dev
 
 The application will be available at http://localhost:5173.
 
+---------------------------------------------------------------
+
 **API Usage**
 
 This application utilizes the Spoonacular API to fetch recipe data based on user-inputted ingredients. Specifically, it uses the "What's in your fridge" endpoint to search for recipes that can be made with the provided ingredients.
+
+---------------------------------------------------------------
 
 **Data Handling**
 
