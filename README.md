@@ -1,54 +1,47 @@
-# React + TypeScript + Vite
+Fridge to Fork
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Fridge to Fork is a single-page web application designed to help users discover healthy and delicious recipes using ingredients they already have at home. By inputting available ingredients, users can find recipes that match their pantry contents.
 
-Currently, two official plugins are available:
+Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Ingredient-Based Search: Enter ingredients to find matching recipes.
 
-## Expanding the ESLint configuration
+Expandable Recipe Details: View ingredients, instructions, and nutritional information without leaving the search page.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Favorites Section: Save and revisit favorite recipes during the session, with an option to download them.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Clean and Intuitive UI: User-friendly interface with a header containing a search bar and a link to the favorites section.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Getting Started
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Prerequisites:
+Node.js (version 20.19.0)
+npm (version 10.8.2)
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+Installation
+
+Clone the repository:
+git clone https://github.com/your-username/fridge-to-fork.git
+
+Navigate to the project directory:
+cd fridge-to-fork
+
+Install dependencies:
+npm install
+
+Start the development server:
+npm run dev
+
+The application will be available at http://localhost:5173.
+
+API Usage
+
+This application utilizes the Spoonacular API to fetch recipe data based on user-inputted ingredients. Specifically, it uses the "What's in your fridge" endpoint to search for recipes that can be made with the provided ingredients.
+
+Data Handling
+
+User-inputted ingredients are sent to the Spoonacular API to retrieve matching recipes.
+
+Recipe details, including ingredients, instructions, and nutritional information, are displayed in an expandable view.
+
+Favorite recipes are stored in the session and can be downloaded for future reference.
