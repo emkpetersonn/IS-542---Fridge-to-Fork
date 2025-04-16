@@ -19,29 +19,38 @@ Fridge to Fork is a single-page web application designed to help users discover 
 **Getting Started**
 
 
+
 ***Prerequisites:***
 
 Node.js (version 20.19.0)
 
 npm (version 10.8.2)
 
+
+---------------------------------------------------------------
+
 **Installation**
+
 
 ***Clone the repository:***
 
 git clone https://github.com/your-username/fridge-to-fork.git
 
+
 ***Navigate to the project directory:***
 
 cd fridge-to-fork
+
 
 ***Install dependencies:***
 
 npm install
 
+
 ***Start the development server:***
 
 npm run dev
+
 
 The application will be available at http://localhost:5173.
 
