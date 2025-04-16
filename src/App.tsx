@@ -90,6 +90,11 @@ const App: React.FC = () => {
     }
   };
 
+  // Handle selecting a recipe
+  const handleSelect = (recipe: Recipe) => {
+    setSelectedRecipe(recipe); // update selected recipe
+  };
+  
   // Get favorites list
   const favoriteRecipes = Array.from(favoriteRecipesMap.values());
 
@@ -142,6 +147,7 @@ const App: React.FC = () => {
           recipes={recipes}
           favorites={favorites}
           onFavorite={(recipe) => handleFavorite(recipe.id)}
+          onSelect={handleSelect}
         />
 {selectedRecipe && (
   <RecipeDetails

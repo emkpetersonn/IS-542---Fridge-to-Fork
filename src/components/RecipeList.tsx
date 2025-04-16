@@ -13,12 +13,13 @@ interface RecipeListProps {
 }
 
 // (https://chatgpt.com/c/67ffe65c-9c78-8005-ae35-db7ac1730999)
-const RecipeList: React.FC<RecipeListProps> = ({ recipes, favorites, onFavorite }) => {
+const RecipeList: React.FC<RecipeListProps> = ({ recipes, favorites, onFavorite, onSelect }) => {
   const [expandedRecipeId, setExpandedRecipeId] = useState<number | null>(null);
 
   const handleSelect = (recipe: Recipe) => {
     // Toggle expansion
     setExpandedRecipeId(prev => (prev === recipe.id ? null : recipe.id));
+    onSelect(recipe);
   };
 
   return (
@@ -38,7 +39,6 @@ const RecipeList: React.FC<RecipeListProps> = ({ recipes, favorites, onFavorite 
             {favorites.has(recipe.id) ? "❤️ Favorited" : "☆ Favorite"}
           </button>
 
-          {/* Expand details if this recipe is selected */}
           {expandedRecipeId === recipe.id && (
             <div className="mt-2 border-t pt-2">
               <RecipeDetails 
