@@ -14,22 +14,27 @@ Clean and Intuitive UI: User-friendly interface with a header containing a searc
 
 **Getting Started**
 
-*Prerequisites:*
+***Prerequisites:***
+
 Node.js (version 20.19.0)
 npm (version 10.8.2)
 
 **Installation**
 
-*Clone the repository:*
+***Clone the repository:***
+
 git clone https://github.com/your-username/fridge-to-fork.git
 
-*Navigate to the project directory:*
+***Navigate to the project directory:***
+
 cd fridge-to-fork
 
-*Install dependencies:*
+***Install dependencies:***
+
 npm install
 
-*Start the development server:*
+***Start the development server:***
+
 npm run dev
 
 The application will be available at http://localhost:5173.
