@@ -22,6 +22,7 @@ Fridge to Fork is a single-page web application designed to help users discover 
 ***Prerequisites:***
 
 Node.js (version 20.19.0)
+
 npm (version 10.8.2)
 
 **Installation**
