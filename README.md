@@ -1,4 +1,4 @@
-**Fridge to Fork**
+<p style="font-weight: 900; text-align: center;">FRIDGE TO FORK</p>
 
 Fridge to Fork is a single-page web application designed to help users discover healthy and delicious recipes using ingredients they already have at home. By inputting available ingredients, users can find recipes that match their pantry contents.
 
