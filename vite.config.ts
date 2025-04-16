@@ -8,4 +8,5 @@ export default defineConfig({
       'application/javascript': ['js', 'jsx', 'ts', 'tsx'],
     },
   },
+  base: '/IS-542---Fridge-to-Fork/',
 });
